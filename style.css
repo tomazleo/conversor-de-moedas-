@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color:  #8a51fc;
+}
+
+main {
+    width: 375px;
+    border-radius: 20px;
+    background-color: #f4f4f4;
+    margin: 0 auto 40px;
+    padding: 44px 24px 23px;
+}
+
+.logo {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    display: block;
+}
+
+label {
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+select {
+    border-radius: 4px;
+    border: 1px solid #bbbbbb;
+    background: #ffffff;
+    height:  48px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
+    cursor: pointer;
+}
+
+input {
+    border-radius: 4px;
+    border: 1px solid #bbbbbb;
+    background: #ffffff;
+    height:  48px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
+    cursor: pointer;
+}
+
+button {
+    border-radius: 15px;
+    width: 100%;
+    background-color: #8a51fc;
+    border: none;
+    height: 48px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+section {
+    border: 1PX solid #772FD3;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}  
+
+.setta {
+    margin: 15px 0;
+}
+
+.moeda-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.moeda-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.nome-moeda {
+    color: #777777;
+    font-size: 14px;
+}
+
+.valor-moeda {
+    color: #555555;
+    font-weight: 700;
+    font-size: 20px;
+}
