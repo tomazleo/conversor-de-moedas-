@@ -19,6 +19,7 @@ if(moedaConvertida.value == "dolar"){
         }).format(inputCurrencyValue / dolarToday)
 
 }
+
 if(moedaConvertida.value == "euro"){
     valorConvertido.innerHTML = new Intl.NumberFormat("pt-pt", {
         style: "currency",
@@ -35,18 +36,11 @@ if(moedaConvertida.value == "libra"){
 
 }
 
-
+}
 
 valorConvercao.innerHTML = new Intl.NumberFormat("pt-br", {
 style: "currency",
 currency: "BRL"
 }).format(inputCurrencyValue)
-
-
-
-console.log(convertValue)
-
-}
-
 
 convertButton.addEventListener("click", convertVelue )
