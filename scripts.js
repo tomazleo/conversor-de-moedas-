@@ -36,11 +36,35 @@ if(moedaConvertida.value == "libra"){
 
 }
 
-}
 
 valorConvercao.innerHTML = new Intl.NumberFormat("pt-br", {
-style: "currency",
-currency: "BRL"
-}).format(inputCurrencyValue)
+    style: "currency",
+    currency: "BRL"
+}).format(inputCurrencyValue);
 
+}
+
+function trocadados() {
+const moedaresultado = document.getElementById("dolar-name")
+const imgresultado = document.getElementById("img-dolar")
+
+    if(moedaConvertida.value == "dolar"){
+        moedaresultado.innerHTML = "Dolar americano"
+        imgresultado.src = "./assets/dolar.png"
+    }
+
+    if(moedaConvertida.value == "euro"){
+        moedaresultado.innerHTML = "Euro"
+        imgresultado.src = "./assets/euro.png"
+    }
+
+    if(moedaConvertida.value == "libra"){
+        moedaresultado.innerHTML = "Libra"
+        imgresultado.src = "./assets/libra 1.png"
+    }
+    convertVelue()
+
+}
+
+moedaConvertida.addEventListener("change", trocadados )
 convertButton.addEventListener("click", convertVelue )
